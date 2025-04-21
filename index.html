@@ -122,7 +122,7 @@
         console.log("Raw SOAP Response:", text);
 
         const match = text.match(/<greeting>(.*?)<\/greeting>/);
-        const greeting = match ? match[1] : "No greeting found.";
+        const greeting = match ? match[1] : "Welcome to Web service.";
 
         document.getElementById("responseBox").textContent = greeting;
       } catch (error) {
